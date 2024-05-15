@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform:  rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    flex-direction: column;
+    background: #002456;
+}
+
+.two {
+    flex-direction: column;
+    background: #FFFFFF;
+}
+
+.three {
+    flex-direction: column;
+    background: #FFFFFF;
+}
+
+.four {
+    flex-direction: column;
+    background: #002456;
+}
+
+
+/*Slide One Section*/
+.slide.one h1 {
+    color:#FFC436;
+    font-family: 'Lora';
+    font-size: 65px;
+    text-align: center;
+
+}
+
+.slide.one h2 {
+    font-family: 'Lora';
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.slide.one p {
+    font-family: 'Open Sans';
+    color: #FFFFFF;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInAnimation 2s ease forwards;
+    padding-top: 15px;
+}
+
+.download-btn {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    background-color: #FFC436;
+    color: #002456;
+    padding: 10px 20px;
+    border: none; 
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #FFFFFF;
+}
+
+
+/*Slide Two Section*/
+.slide.two h1 {
+    font-family: 'Lora';
+    font-weight: 300px;
+    text-align: center;
+    color: #002456;
+}
+
+.mini-container {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.min-con {
+    width: 290px;
+    height: 350px;
+    border-radius: 25px;
+    background-color: #002456;
+    text-align: center;
+    padding: 40px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.mcThree {
+    margin-right: 0px;
+}
+  
+.min-con h3 {
+    font-family: 'Lora';
+    color: #FFC436;
+    padding-bottom: 15px;
+}
+
+.min-con p {
+    font-family: 'Open Sans';
+    color: #FFFFFF;
+}
+
+.min-icon {
+    width: 75px;
+    padding-bottom: 10px;
+}
+
+/*Slide Three Section*/
+.slide.three h1 {
+    font-family: 'Lora';
+    font-weight: 300px;
+    text-align: center;
+    color: #002456;
+    margin-bottom: 10px;
+}
+
+.img-container {
+    align-items: center;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.row1-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row2-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 10%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*Slide Four Section*/
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+  
+.form-con1 {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    padding-right: 100px;
+}
+  
+.form-con1 h2 {
+    font-family: 'Lora';
+    color: #FFC436;
+}
+  
+.form-con1 p {
+    font-family: 'Open Sans';
+    color: white;
+}
+
+.small-container {
+    margin-top: 20px;
+    display: flex;
+}
+  
+.btn-with-icon {
+    border: 2px solid #FFC436;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #FFC436;
+    padding: 5px 10px 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-with-icon:hover{
+    background-color: #FFFFFF;
+}
+
+.form-con1 h4 {
+    font-family: 'Open Sans';
+    color: #FFC436;
+    padding-top: 20px;
+}
+
+.small-icon {
+    font-size: 15px;
+}
+  
+.form-con2 {
+    border: #FFC436;
+    border-radius: 15px;
+    display: flex;
+    background-color: #FFC436;
+    flex-direction: column;
+    padding: 30px;
+    width: 80%;
+}
+  
+.form-con2 input {
+    border: #FFC436;
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'Open Sans';
+    padding: 10px;
+    margin-bottom: 5px;
+}
+  
+.form-con2 select {
+    border: #FFC436;
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'Open Sans';
+    padding: 10px;
+    margin-bottom: 5px;
+}
+  
+.form-con2 textarea {
+    border: #FFC436;
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'Open Sans';
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+  
+.sub-btn {
+    border: #002456;
+    border-radius: 15px;
+    background-color: #002456;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #FFC436;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sub-btn:hover {
+    background-color: #FFFFFF;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*Extra small devices such as phones with 576px and down*/
+@media (max-width: 576px) {
+    .outer-wrapper {
+        width: auto;
+        height: auto;
+        transform: none;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .wrapper {
+        display: block;
+        width: auto;
+        transform: none;
+    }
+
+    .slide {
+        width: auto;
+        height: auto;
+    }
+
+    /*Slide One*/
+    .slide.one h1 {
+        font-size: 30px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .slide.one h2 {
+        padding: 5px;
+        font-size: 16px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .slide.one p {
+        font-size: 11px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .download-btn {
+        font-size: 11px;
+        margin: 10px 0px 50px 0px;
+    }
+
+    /*Slide Two*/
+    .slide.two h1 {
+        font-size: 30px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .mini-container {
+        flex-direction: column;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    
+    .min-con {
+        width: 190px;
+        height: 250px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+      
+    .min-con h3 {
+        font-size: 14px;
+    }
+    
+    .min-con p {
+        font-size: 11px;
+    }
+    
+    .min-icon {
+        width: 50px;
+    }
+
+    /*Slide Three*/
+    .slide.three h1 {
+        font-family: 'Lora';
+        margin-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .img-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px;
+    }
+
+    img {
+        width: 10%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /*Slide Four Section*/
+    .form-wrapper {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+  
+    .form-con1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+  
+    .form-con1 h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+  
+    .form-con1 p {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .small-container {
+        margin-top: 20px;
+    }
+  
+    .btn-with-icon {
+        font-size: 11px;
+    }
+
+    .form-con1 h4 {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .small-icon {
+        font-size: 12px;
+    }
+  
+    .form-con2 {
+        width: 80%;
+        padding: 30px;
+    }
+  
+    .form-con2 input {
+        font-size: 11px;
+    }
+  
+    .form-con2 select {
+        font-size: 11px;
+    }
+  
+    .form-con2 textarea {
+        font-size: 11px;
+    }
+  
+    .sub-btn {
+        margin-top: 10px;
+    }
+    
+}
+
+/*Extra small devices such as phones with 576px and down*/
+@media (max-width: 776px) {
+    .outer-wrapper {
+        width: auto;
+        height: auto;
+        transform: none;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .wrapper {
+        display: block;
+        width: auto;
+        transform: none;
+    }
+
+    .slide {
+        width: auto;
+        height: auto;
+    }
+
+    /*Slide One*/
+    .slide.one h1 {
+        font-size: 30px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .slide.one h2 {
+        padding: 5px;
+        font-size: 16px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .slide.one p {
+        font-size: 11px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .download-btn {
+        font-size: 11px;
+        margin: 10px 0px 50px 0px;
+    }
+
+    /*Slide Two*/
+    .slide.two h1 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    
+    .mini-container {
+        flex-direction: column;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    
+    .min-con {
+        width: 190px;
+        height: 250px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+      
+    .min-con h3 {
+        font-size: 14px;
+    }
+    
+    .min-con p {
+        font-size: 11px;
+    }
+    
+    .min-icon {
+        width: 50px;
+    }
+
+    /*Slide Three*/
+    .slide.three h1 {
+        font-family: 'Lora';
+        margin-top: 100px;
+    }
+
+    .img-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px;
+    }
+
+    img {
+        width: 15%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /*Slide Four Section*/
+    .form-wrapper {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+  
+    .form-con1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+  
+    .form-con1 h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+  
+    .form-con1 p {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .small-container {
+        margin-top: 20px;
+    }
+  
+    .btn-with-icon {
+        font-size: 11px;
+    }
+
+    .form-con1 h4 {
+        font-size: 11px;
+    }
+
+    .small-icon {
+        font-size: 12px;
+    }
+  
+    /*Starts here!*/
+    .form-con2 {
+        width: 80%;
+        padding: 30px;
+    }
+  
+    .form-con2 input {
+        font-size: 11px;
+    }
+  
+    .form-con2 select {
+        font-size: 11px;
+    }
+  
+    .form-con2 textarea {
+        font-size: 11px;
+    }
+  
+    .sub-btn {
+        margin-top: 10px;
+    }
+    
+}

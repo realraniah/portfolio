@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' 
+        rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' 
+        rel='stylesheet'>
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="C:/Users/Ran-yah/Desktop/website/img/rny.png">
+  
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  
+  <!-- EmailJS API Key-->
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+      publicKey: "GSXGUIlOhu60jgELl" });
+    })();
+  </script>
+  
+  <script src="script.js"></script>
+    <title> Ran-yah </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="outer-wrapper">
+    <div class="wrapper">
+
+      <!-- First Page: About Me with the Download CV button -->
+      <div class="slide one">
+        <h1> Raniah Taurac </h1>
+        <h2> /ran•yah taw•rac/ </h2>
+        <p> a computer engineer who has a love-hate relationship with <br>coding, but here she is, still coding for what she believes is a <br>meaningful contribution for herself and her community. </p>
+        <button class ="download-btn" onclick="openInNewTab('https://drive.google.com/file/d/11-XMe5av1T_8n3NwpczjpIAvMmrmqRnf/view?usp=drive_link')"> Download CV </button>
+      </div>
+
+      <!-- Second Page: What I Can Offer Page -->
+      <div class="slide two">
+        <h1>What I Can Offer</h1>
+        <div class="mini-container">
+          <div class="min-con mcOne">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\webapp.png" class="min-icon" alt="web-app">
+            <h3>Web Development</h3>
+            <p>Design and build web application solutions for e-commerce, as well as custom web applications, using Django.</p>
+          </div>
+          <div class="min-con mcTwo">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\desktop.png" class="min-icon" alt="desktop-app">
+            <h3>Desktop Application Development</h3>
+            <p>Design, build and integrate desktop application solutions using Tkinter.</p>
+          </div>
+          <div class="min-con mcThree">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\graph.png" class="min-icon" alt="data-visual">
+            <h3>Data Visualization</h3>
+            <p>Create beautiful and tailored dashboards and utilize Python libraries such as Pandas and Matplotlib to visualize data effectively.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Page: Technical Skills -->
+      <div class="slide three">
+        <h1> Technical Skills </h1>
+        <div class="img-container">
+          <div class="row1-icon">
+            <!--ADVISE: please change the size into similar and fit icons-->
+            <img src="C:\Users\Ran-yah\Desktop\website\img\python.png" alt="Python">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\java.png" alt="Java">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\html5.png" alt="HTML-5">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\css3.png" alt="CSS-3">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\js.png" alt="JavaScript">
+          </div>
+          <div class="row2-icon">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\opencv.png" alt="OpenCV">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\pandas.png" alt="Pandas">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\matplotlib.png" alt="Matplotlib">
+            <img src="C:\Users\Ran-yah\Desktop\website\img\django.png" alt="Django">
+          </div>
+        </div>
+      </div>
+            
+      <!-- Fourth Page: Contact Form -->
+      <div class="slide four">
+
+        <!-- Form Wrapper for the two containers -->
+        <div class="form-wrapper">
+          
+          <!--First Container in the form wrapper-->
+          <div class="form-con1">
+            <h2>Let's get in touch!</h2>
+            <p>You can contact me via social media or send me a formal message by filling out the form right next to this section. Thank you for taking the time to check my portfolio, and I am eagerly anticipating the opportunity to work with you!</p>
+            
+            <!--Small container for three icons incorporated with the social media links-->
+            <div class="small-container">
+              <button onclick="window.location.href='https://www.instagram.com/realraniah?igsh=MXc4NWF6MjBzbnE5OA==';" class="btn-with-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </button>
+              <button onclick="window.location.href='https://ph.linkedin.com/in/raniah-l-taurac-1b8472206';" class="btn-with-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </button>
+              <button onclick="window.location.href='https://github.com/realraniah';" class="btn-with-icon">
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </div>
+            <h4>Created with <i class="fa-solid fa-heart small-icon"></i> by Ran-yah (2024)</h4>
+          </div>
+          
+          <!--Second Container with the form in the wrapper-->
+          <div class="form-con2">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <select id="subject" id="subject" required>
+              <option value="">Select a subject type</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Project Collaboration">Project Collaboration</option>
+              <option value="Feedback/Suggestions">Feedback/Suggestions</option>
+              <option value="Bug Report">Bug Report</option>
+              <option value="Technical Support">Technical Support</option>
+              <option value="Partnership Opportunity">Partnership Opportunity</option>
+              <option value="Media Inquiry">Media Inquiry</option>
+              <option value="Career Opportunity">Career Opportunity</option>
+              <option value="Other">Other</option>
+            </select>
+            <textarea id="message" rows="5" placeholder="Tell me about it and I will read your message whenever I can." required></textarea>
+            <button type="submit" class="sub-btn" onclick="sendMail()">Send</button>
+          </div>
+
+        </div> <!--end-of-the-form-wrapper-->
+      </div> <!--end-of-the-slide-four-->
+
+            
+    </div>
+  </div>
+</body>
