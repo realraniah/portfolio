@@ -581,6 +581,7 @@ img {
   
     .form-con1 h2 {
         font-size: 30px;
+        text-align: center;
         margin-bottom: 10px;
     }
   
@@ -604,8 +605,7 @@ img {
     .small-icon {
         font-size: 12px;
     }
-  
-    /*Starts here!*/
+  
     .form-con2 {
         width: 80%;
         padding: 30px;
